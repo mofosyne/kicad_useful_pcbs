@@ -36,6 +36,14 @@ for dir in */; do
       echo "" >> "$OUT"
     fi
   done
+
+  schematic_pdf=$(find "$dir" -maxdepth 1 -name "*.pdf" | head -n 1)
+  echo "- [schematic pdf](${schematic_pdf})" >> "$OUT"
+  echo "" >> "$OUT"
+
+  fabrication_file=$(find "$dir" -maxdepth 1 -name "*_fabrication.zip" | head -n 1)
+  echo "- [fabrication gerber and drills files](${fabrication_file})" >> "$OUT"
+
 done
 
 echo "README.md generated ✔"
