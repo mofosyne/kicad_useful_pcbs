@@ -633,7 +633,7 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "1",
+    "REVISION": "2",
     "TITLE": "EC11 Horizontal Rotary Encoder Breakout Board"
   }
 }
